@@ -4,11 +4,9 @@
     "source": "/home/paul/.config/fastfetch/logo.png",
     "width": 38,
     "height": 16
-  },
-  "display": {
+  }, "display": {
     "separator": " > ",
-  },
-  "modules": [
+  }, "modules": [
     "title",
     "break", {
         "type": "os",
