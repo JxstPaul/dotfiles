@@ -1,0 +1,52 @@
+{
+  "logo": {
+    "type": "kitty-direct",
+    "source": "/home/paul/.config/fastfetch/logo.png",
+    "width": 38,
+    "height": 16
+  },
+  "display": {
+    "separator": " > ",
+  },
+  "modules": [
+    "title",
+    "break", {
+        "type": "os",
+        "key": " OS",
+        "format": "{3} {12}"
+    }, {
+        "type": "kernel",
+        "key": " KRNL",
+        "format": "{1} {2}"
+    }, {
+        "type": "uptime",
+        "key": " UP",
+        "format": "{10}"
+    }, "break", {
+        "type": "cpu",
+        "key": " CPU",
+        "format": ""
+    }, {
+        "type": "gpu",
+        "key": "󰢮 GPU",
+        "format": ""
+    }, {
+        "type": "memory",
+        "key": " RAM",
+        "format": ""
+    }, {
+        "type": "disk",
+        "key": "󰉉 SSD",
+        "format": ""
+    }, "break", {
+        "type": "shell",
+        "key": " SHELL",
+        "format": "{6} {4}"
+    }, {
+        "type": "terminal",
+        "key": " TRMNL",
+        "format": "{5} {6}"
+    }, "break",
+    "colors"
+  ]
+}
