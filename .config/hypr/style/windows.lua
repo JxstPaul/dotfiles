@@ -9,7 +9,6 @@ hl.config({
             inactive_border = "rgba(00000088)",
         },
 
-        resize_on_border = false,
         allow_tearing = false,
         layout = "dwindle",
     },
@@ -35,11 +34,6 @@ hl.config({
             vibrancy = 0.2,
             passes   = 1,
             size     = 2
-        },
-    },
-
-    misc = {
-        force_default_wallpaper = 0,
-        disable_hyprland_logo   = true
+        }
     }
 })
