@@ -20,23 +20,28 @@
 }
 
 #left {
-    padding: 2px 10px;
-    border-radius: 15px;
-    background: @bg;
+    padding: 2px 3px;
+    border-radius: 10px;
+    background: alpha(@bg, 0.77);
 }
 
 #clock {
     padding: 1px 18px;
-    border-radius: 15px;
-    background: @bg;
+    border-radius: 10px;
+    background: alpha(@bg, 0.77);
 }
 
 #workspaces button {
+    box-shadow: none;
+    text-shadow: none;
     color: @fg;
-    font-size: 14px;
-    border-radius: 100%;
-    padding: 0 2px;
-    margin: 0 3px;
+    border-radius: 10px;
+    padding: 0 4px;
+}
+
+#workspaces button.active {
+    background-color: @fg;
+    color: @bg;
 }
 
 #workspaces button:hover {
