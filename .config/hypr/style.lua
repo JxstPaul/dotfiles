@@ -1,5 +1,10 @@
 require("style/decoration")
 
+local theme = {
+    text = "#cdd6f4",
+    base = "1e1e2e"
+}
+
 hl.config({
     general = {
         gaps_in  = 4,
