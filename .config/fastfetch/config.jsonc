@@ -40,7 +40,7 @@
         "type": "shell",
         "key": " SHELL",
         "format": "{6} {4}"
-    }, {
+    },  {
         "type": "terminal",
         "key": " TRMNL",
         "format": "{5} {6}"
