@@ -1,22 +1,17 @@
 {
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({ workspace = 'e+1' })\"",
-        "on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({ workspace = 'e-1' })\"",
-        "persistent-workspaces": { "*": 4 },
-        "cursor": true,
-        "format-icons": {
-            "active": "󰮯",
-            "persistent": "",
-            "empty": ""
-        }
+        "on-click": "activate",
+        "activate-only": false,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent-workspaces": { "*": 4 }
     },
 
     "clock": {
         "timezone": "Europe/Germany/Berlin",
         "tooltip": false,
-        "format-alt": "{:%d %B %Y}",
-        "on-click-right": "hyprctl eval \"hl.exec_cmd('ghostty --class=peaclock -e peaclock')\""
+        "format-alt": "{:%a %d %B %Y}",
+        "on-click-right": "hyprctl eval \"hl.exec_cmd('ghos>
     },
 
     "mpris": {
