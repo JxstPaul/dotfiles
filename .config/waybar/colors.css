@@ -1,9 +1,2 @@
-@define-color bg        #1e1e2e;
-@define-color fg        #cdd6f4;
-@define-color inactive  #787c99;
-@define-color highlight @inactive;
-
-@define-color red    #f7768e;
-@define-color blue   #7aa2f7;
-@define-color yellow #e0af68;
-@define-color green  #41a6b5;
+@define-color text #cdd6f4;
+@define-color base #1e1e2e;
