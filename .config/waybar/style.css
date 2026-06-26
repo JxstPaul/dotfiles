@@ -1,0 +1,55 @@
+@import "colors.css";
+
+* {
+    font-family: 'Maple Mono NL NF';
+}
+
+#waybar {
+    font-weight: bold;
+    background: transparent;
+    font-size: 14px;
+    color: @fg;
+}
+
+#mpris {
+    padding: 1px 7px;
+}
+
+#workspaces {
+    margin: 0 3px;
+}
+
+#left {
+    padding: 2px 10px;
+    border-radius: 15px;
+    background: @bg;
+}
+
+#clock {
+    padding: 1px 18px;
+    border-radius: 15px;
+    background: @bg;
+}
+
+#workspaces button {
+    color: @fg;
+    font-size: 14px;
+    border-radius: 100%;
+    padding: 0 2px;
+    margin: 0 3px;
+}
+
+#workspaces button:hover {
+    background: transparent;
+}
+
+tooltip {
+    border-radius: 15px;
+    background: @bg;
+}
+
+tooltip label {
+    padding: 3px 10px;
+    color: @fg;
+    font-weight: bold;
+}
