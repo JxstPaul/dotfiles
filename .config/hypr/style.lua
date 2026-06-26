@@ -2,7 +2,7 @@ require("style/decoration")
 
 local theme = {
     text = "#cdd6f4",
-    base = "1e1e2e"
+    base = "#1e1e2e"
 }
 
 hl.config({
@@ -13,11 +13,11 @@ hl.config({
         border_size = 1,
         col = {
             active_border   = theme.text,
-            inactive_border = theme.base,
+            inactive_border = theme.base
         },
 
         allow_tearing = false,
-        layout = "dwindle",
+        layout = "dwindle"
     },
 
     dwindle = {
