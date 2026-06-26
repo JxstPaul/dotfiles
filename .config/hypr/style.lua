@@ -12,8 +12,8 @@ hl.config({
 
         border_size = 1,
         col = {
-            active_border   = "rgba(88888888)",
-            inactive_border = "rgba(00000088)",
+            active_border   = theme.text,
+            inactive_border = theme.base,
         },
 
         allow_tearing = false,
