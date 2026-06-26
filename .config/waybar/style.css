@@ -47,14 +47,3 @@
 #workspaces button:hover {
     background: transparent;
 }
-
-tooltip {
-    border-radius: 15px;
-    background: @bg;
-}
-
-tooltip label {
-    padding: 3px 10px;
-    color: @fg;
-    font-weight: bold;
-}
