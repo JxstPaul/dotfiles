@@ -2,16 +2,25 @@
 
 #clock,
 #mpris,
-#pulseaudio, 
+#pulseaudio,
 #workspaces {
     color: @text;
-	padding: 0 7px
+    padding: 0 7px
 }
 
 #clock:hover,
 #mpris:hover,
 #pulseaudio:hover {
-	border-bottom: 2px solid @lavender
+    border-bottom: 2px solid @lavender
+}
+
+#pulseaudio.microphone {
+    color: @red;
+    padding: 0 15px
+}
+
+#pulseaudio.microphone:hover {
+    border: none
 }
 
 #workspaces button {
@@ -20,7 +29,7 @@
 }
 
 #workspaces button.active {
-	color: @lavender;
-	border-radius: 0;
-	border-bottom: 2px solid @lavender
+    color: @lavender;
+    border-radius: 0;
+    border-bottom: 2px solid @lavender
 }
