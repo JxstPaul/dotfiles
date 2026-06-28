@@ -1,7 +1,7 @@
 {
 	"clock": {
 		"timezone": "Europe/Berlin",
-		"format": "{:%A %H:%M}",
+		"format": "{:%H:%M}",
 		"format-alt": "{:%a %d. %b}",
 		"tooltip": false
 	}
