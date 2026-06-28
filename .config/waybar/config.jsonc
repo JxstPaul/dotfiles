@@ -1,11 +1,11 @@
 {
-	"output": "DP-1",
-	"height": 30,
-	"width": 1920,
+    "output": "DP-1",
+    "height": 30,
+    "width": 1920,
 
-	"modules-left": [ "hyprland/workspaces", "mpris" ],
-	"modules-center": [ "clock" ],
-	"modules-right": [ "pulseaudio" ],
+    "modules-left": [ "hyprland/workspaces", "mpris" ],
+    "modules-center": [ "clock" ],
+    "modules-right": [ "pulseaudio#microphone", "pulseaudio" ],
 
-	"include": [ "modules.jsonc" ]
+    "include": [ "modules.jsonc" ]
 }
