@@ -5,7 +5,7 @@
 
     "modules-left": [ "hyprland/workspaces", "mpris" ],
     "modules-center": [ "clock" ],
-    "modules-right": [ "pulseaudio#microphone", "pulseaudio" ],
+    "modules-right": [ "pulseaudio#microphone", "pulseaudio", "custom/menu" ],
 
     "include": [ "modules.jsonc" ]
 }
