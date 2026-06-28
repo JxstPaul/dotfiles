@@ -1,6 +1,7 @@
 {
 	"include": [
 		"modules/clock.jsonc",
+		"modules/menu.jsonc",
 		"modules/mpris.jsonc",
 		"modules/pulseaudio.jsonc",
 		"modules/workspaces.jsonc"
