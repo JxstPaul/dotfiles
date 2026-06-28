@@ -4,7 +4,7 @@
 		"format": "{icon} {volume}%",
 		"format-muted": "MUTE",
 		"format-icons": {
-			"default": ["󰕿","󰖀",""]
+			"default": ["","",""]
 		},
 
 		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
