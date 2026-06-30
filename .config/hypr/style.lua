@@ -1,9 +1,4 @@
-require("style/decoration")
-
-local theme = {
-    text = "#cdd6f4",
-    base = "#1e1e2e"
-}
+require("style/colors")
 
 hl.config({
     general = {
@@ -12,8 +7,8 @@ hl.config({
 
         border_size = 1,
         col = {
-            active_border   = theme.text,
-            inactive_border = theme.base
+            inactive_border = base,
+            active_border = text
         },
 
         allow_tearing = false,
@@ -32,4 +27,5 @@ hl.config({
     animations = { enabled = true }
 })
 
+require("style/decoration")
 require("style/animations")
