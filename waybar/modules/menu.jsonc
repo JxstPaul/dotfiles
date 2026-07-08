@@ -1,0 +1,6 @@
+{
+	"custom/menu": {
+		"format": "",
+		"on-double-click": "systemctl poweroff"
+	}
+}

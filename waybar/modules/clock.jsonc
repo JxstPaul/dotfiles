@@ -1,0 +1,9 @@
+{
+	"clock": {
+		"timezone": "Europe/Berlin",
+		"tooltip": false,
+		"format": "{:%H:%M}",
+		"format-alt": "{:%a %d. %b}",
+		"on-click-right": "ghostty --class=peaclock -e peaclock"
+	}
+}

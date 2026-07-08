@@ -1,0 +1,6 @@
+{
+	"hyprland/workspaces": {
+		"disable-click": true,
+		"persistent-workspaces": { "*": 4 }
+	}
+}

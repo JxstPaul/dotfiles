@@ -1,0 +1,11 @@
+# Ignore all folders except when specifically told not to
+/*
+
+# Allow to view '.gitignore'
+!.gitignore
+!README.md
+
+!fastfetch/
+!ghostty/
+!hypr/
+!waybar/

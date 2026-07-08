@@ -1,0 +1,14 @@
+@import "style/colors.css";
+
+* {
+	font-family: "Maple Mono NL NF";
+	background: transparent
+}
+
+#waybar {
+	padding: 0;
+	margin: 0;
+	background: alpha(@base, 0.77)
+}
+
+@import "style/modules.css";
