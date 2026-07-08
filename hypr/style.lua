@@ -8,7 +8,7 @@ hl.config({
 		border_size = 1,
 		col = {
 			inactive_border = base,
-			active_border = text
+			active_border = active
 		},
 
 		allow_tearing = false,

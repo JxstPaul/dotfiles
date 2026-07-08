@@ -1,2 +1,2 @@
-text = "#cdd6f4"
+active = "#cdd6f4"
 base = "#1e1e2e"
