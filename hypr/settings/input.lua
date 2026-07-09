@@ -20,7 +20,7 @@ hl.bind(mod .. " + mouse:273", hl.dsp.window.resize())
 hl.bind(mod .. " + LEFT", hl.dsp.window.move({ workspace = "e-1", follow = false }))
 hl.bind(mod .. " + RIGHT", hl.dsp.window.move({ workspace = "e+1", follow = false }))
 
-hl.bind("PRINT", hl.dsp.exec_cmd('grim -g "$(slurp) ~/Pictures/Screenshots'))
+hl.bind("PRINT", hl.dsp.exec_cmd([[ grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Media/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png ]]))
 
 hl.bind(mod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mod .. " + R", hl.dsp.exec_cmd(terminal))

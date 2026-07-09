@@ -8,4 +8,13 @@
 !fastfetch/
 !ghostty/
 !hypr/
+
+!mpd/
+mpd/*
+!mpd/mpd.conf
+
+!ncmpcpp/
+ncmpcpp/*
+!ncmpcpp/config
+
 !waybar/
