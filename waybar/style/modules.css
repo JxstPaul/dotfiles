@@ -16,7 +16,8 @@
 }
 
 #custom-menu {
-	color: @blue
+	color: @blue;
+    padding: 0 15px 0 7px
 }
 
 #pulseaudio.microphone {
