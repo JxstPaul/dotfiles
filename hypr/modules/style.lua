@@ -1,7 +1,7 @@
 require("colors")
 
 hl.config({
-	general = {
+    general = {
 		gaps_in = 4,
 		gaps_out = 8,
 
@@ -30,12 +30,13 @@ hl.config({
 		}
 	},
 
-	dwindle = { preserve_split = true },
+	dwindle = {
+        preserve_split = true,
+        force_split = 2
+    },
 
 	misc = {
 		force_default_wallpaper = 0,
 		disable_hyprland_logo = true
-	},
-
-	animations = { enabled = true }
+	}
 })
