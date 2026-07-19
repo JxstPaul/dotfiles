@@ -13,7 +13,7 @@ local menu = "pkill rofi || rofi -show drun"
 local terminal = "ghostty"
 
 hl.bind(mod .. " + Q", hl.dsp.window.close())
-hl.bind("F11", hl.dsp.window.fullscreen({ "maximized", toggle }))
+hl.bind("F11", hl.dsp.window.fullscreen())
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag())
 hl.bind(mod .. " + mouse:272", hl.dsp.window.float(), { click = true })
 hl.bind(mod .. " + mouse:273", hl.dsp.window.resize())
