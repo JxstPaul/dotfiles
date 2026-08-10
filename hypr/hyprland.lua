@@ -7,11 +7,12 @@ end)
 ----- PERMISSIONS -----
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Permissions/
 
-require("modules/animations")
-require("modules/environment")
-require("modules/input")
-require("modules/monitors")
-require("modules/style")
-require("modules/workspaces")
+require("modules.animations")
+require("modules.environment")
+require("modules.input")
+require("modules.keybinds")
+require("modules.monitors")
+require("modules.style")
+require("modules.workspaces")
 
 require("rules/window")
