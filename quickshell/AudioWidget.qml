@@ -1,17 +1,18 @@
 import QtQuick
+import "./services"
 
 Rectangle {
     id: widgetRoot
 
-    implicitWidth: 24
+    implicitWidth: volume.implicitWidth + 24
     implicitHeight: 30
-    color: "transparent"
+    color: Qt.alpha("#ffffff", 0.2)
 
     Text {
         id: volume
         anchors.centerIn: parent
 
-        text: A
+        text: SystemAudio.volume
         color: "#cdd6f4"
 
         font.family: "Maple Mono NL NF CN"

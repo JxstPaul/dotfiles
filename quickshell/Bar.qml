@@ -15,5 +15,9 @@ Scope {
         ClockWidget {
             anchors.centerIn: parent
         }
+
+        AudioWidget {
+            anchors.right: parent.right
+        }
     }
 }
