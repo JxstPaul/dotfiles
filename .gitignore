@@ -17,4 +17,5 @@ mpd/*
 ncmpcpp/*
 !ncmpcpp/config
 
+!quickshell/
 !waybar/
