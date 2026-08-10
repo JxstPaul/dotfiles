@@ -1,20 +1,17 @@
 import QtQuick
-import "./services"
 
 Rectangle {
     id: widgetRoot
 
-    property bool showDate: false
-
-    implicitWidth: clock.implicitWidth + 24
+    implicitWidth: 24
     implicitHeight: 30
     color: "transparent"
 
     Text {
-        id: clock
+        id: volume
         anchors.centerIn: parent
 
-        text: widgetRoot.showDate ? SystemClock.date : SystemClock.time
+        text: A
         color: "#cdd6f4"
 
         font.family: "Maple Mono NL NF CN"
@@ -24,7 +21,5 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         cursorShape: Qt.PointingHandCursor
-
-        onClicked: widgetRoot.showDate = !widgetRoot.showDate
     }
 }
