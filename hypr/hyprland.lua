@@ -1,18 +1,19 @@
-hl.on("hyprland.start", function () 
-	hl.exec_cmd("hyprlock")
+-- Autostart
+hl.on("hyprland.start", function ()
 	hl.exec_cmd("hyprpaper")
 	hl.exec_cmd("waybar")
 end)
 
------ PERMISSIONS -----
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Permissions/
-
-require("modules.animations")
-require("modules.environment")
-require("modules.input")
-require("modules.keybinds")
 require("modules.monitors")
 require("modules.style")
 require("modules.workspaces")
+require("modules.rules")
 
-require("rules/window")
+-- Config modules
+require("hyprland.animations")
+require("hyprland.decoration")
+require("hyprland.env")
+require("hyprland.general")
+require("hyprland.input")
+require("hyprland.keybinds")
+require("hyprland.misc")
