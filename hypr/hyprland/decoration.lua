@@ -15,6 +15,9 @@ hl.config({
 
         shadow = {
             enabled = vars.shadowEnabled,
+            range = vars.shadowRange,
+            render_power = vars.shadowRenderPower,
+            color = vars.shadowColor,
         },
     }
 })

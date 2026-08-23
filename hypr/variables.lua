@@ -11,6 +11,9 @@ return {
 
     -- Shadow
     shadowEnabled = false,
+    shadowRange = 1,
+    shadowRenderPower = 1,
+    shadowColor = "#ffffff",
 
     -- Gaps
     windowGapsIn = 4,
@@ -32,7 +35,11 @@ return {
     keyMoveToWorkspace = "SUPER + CTRL",
 
     -- Window actions
+    keyToggleFullscreen = "F11",
     keyCloseWindow = "SUPER + Q",
+
+    -- Audio
+    keyMuteMic = "SUPER + M",
 
     -- Utilities
     keyColorPicker = "SUPER + SHIFT + 2",
