@@ -26,7 +26,7 @@ return {
     inactiveWindowBorderColor = "#1e1e2e",
 
     -- Misc
-    cursorTheme = 0,
+    cursorTheme = "macOS",
     cursorSize = 24,
 
     ---- KEYBINDS ----

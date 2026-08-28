@@ -6,16 +6,6 @@
 !README.md
 
 !fastfetch/
-!ghostty/
 !hypr/
-
-!mpd/
-mpd/*
-!mpd/mpd.conf
-
-!ncmpcpp/
-ncmpcpp/*
-!ncmpcpp/config
-
 !quickshell/
 !waybar/
