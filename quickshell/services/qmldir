@@ -1,2 +1,0 @@
-singleton SystemAudio 1.0 SystemAudio.qml
-singleton SystemClock 1.0 SystemClock.qml

@@ -26,6 +26,7 @@ return {
     inactiveWindowBorderColor = "#1e1e2e",
 
     -- Misc
+    volumeStep = 5,
     cursorTheme = "macOS",
     cursorSize = 24,
 
@@ -36,7 +37,10 @@ return {
 
     -- Window actions
     keyToggleFullscreen = "F11",
+    keyToggleFloating = "SUPER + mouse:272",
     keyCloseWindow = "SUPER + Q",
+    keyMoveWindow = "SUPER + mouse:272",
+    keyResizeWindow = "SUPER + mouse:273",
 
     -- Audio
     keyMuteMic = "SUPER + M",
