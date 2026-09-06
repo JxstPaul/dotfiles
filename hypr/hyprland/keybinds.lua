@@ -1,44 +1,37 @@
 local vars = require("variables")
+local fn = require("utilities.functions")
 
-local function foo(keybinds, action, flags)
-    if type(keybinds) == "table" then
-        for _, keybind in pairs(keybinds) do
-            hl.bind(keybind, action, flags)
-        end
-    else
-        hl.bind(keybinds, action, flags)
-    end
+-- Workspace actions
+for i = 1, 4 do
+    fn.bind(fn.extend(vars.keyFocusWorkspace, i), hl.dsp.focus({ workspace = i }))
+    fn.bind(fn.extend(vars.keyWindowToWorkspace, i), hl.dsp.window.move({ workspace = i, follow = vars.followWindow }))
 end
 
-local function extend(base, suffix)
-    return base .. " + " .. suffix
-end
+fn.bind(vars.keyNextWorkspace, hl.dsp.focus({ workspace = "+1" }))
+fn.bind(vars.keyPrevWorkspace, hl.dsp.focus({ workspace = "-1" }))
 
 -- Window actions
-foo(vars.keyCloseWindow, hl.dsp.window.close())
-foo(vars.keyToggleFullscreen, hl.dsp.window.fullscreen())
-foo(vars.keyMoveWindow, hl.dsp.window.drag())
-foo(vars.keyResizeWindow, hl.dsp.window.resize())
-foo(vars.keyToggleFloating, hl.dsp.window.float(), { click = true })
+fn.bind(vars.keyCloseWindow, hl.dsp.window.close())
+fn.bind(vars.keyToggleFullscreen, hl.dsp.window.fullscreen())
+fn.bind({vars.keyMoveWindow, "SUPER + mouse:272"}, hl.dsp.window.drag())
+fn.bind({vars.keyResizeWindow, "SUPER + mouse:273"}, hl.dsp.window.resize())
+fn.bind(vars.keyCenterWindow, hl.dsp.window.center())
+fn.bind(vars.keyToggleFloating, hl.dsp.window.float())
 
-foo(vars.keyColorPicker, hl.dsp.exec_cmd("hyprpicker -a"))
-foo(vars.keyScreenshot, hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
-foo(vars.keyScreenshotRegion, hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
+-- Utilities
+fn.bind(vars.keyColorPicker, hl.dsp.exec_cmd("hyprpicker -a"))
+fn.bind(vars.keyScreenshot, hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
+fn.bind(vars.keyScreenshotRegion, hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
 
-foo("SUPER + SPACE", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
-foo("SUPER + R", hl.dsp.exec_cmd("ghostty"))
+fn.bind("SUPER + SPACE", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
+fn.bind("SUPER + R", hl.dsp.exec_cmd("ghostty"))
 
 -- Audio Controls
-foo("XF86AudioRaiseVolume",
+fn.bind({vars.keyRaiseVolume, "XF86AudioRaiseVolume"},
     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume @DEFAULT_AUDIO_SINK@ -l 1.0 " .. vars.volumeStep .. "%+"),
     { locked = true, repeating = true })
-foo("XF86AudioLowerVolume",
+fn.bind({vars.keyLowerVolume, "XF86AudioLowerVolume"},
     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume @DEFAULT_AUDIO_SINK@ " .. vars.volumeStep .. "%-"),
     { locked = true, repeating = true })
-foo("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
-foo(vars.keyMuteMic, hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
-
-for i = 1, 4 do
-    foo(extend(vars.keyFocusWorkspace, i), hl.dsp.focus({ workspace = i }))
-    foo(extend(vars.keyMoveToWorkspace, i), hl.dsp.window.move({ workspace = i, follow = false }))
-end
+fn.bind({vars.keyMuteAudio, "XF86AudioMute"}, hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
+fn.bind(vars.keyMuteMic, hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })

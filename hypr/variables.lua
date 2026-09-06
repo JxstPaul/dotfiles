@@ -29,24 +29,39 @@ return {
     volumeStep = 5,
     cursorTheme = "macOS",
     cursorSize = 24,
+    followWindow = false,
 
     ---- KEYBINDS ----
-    -- Workspaces
+
+    keyTODOi = "SUPER",
+    keyTODOii = "SUPER + SPACE",
+
+    -- Workspace actions
     keyFocusWorkspace = "SUPER",
-    keyMoveToWorkspace = "SUPER + CTRL",
+    keyWindowToWorkspace = "SUPER + CTRL",
+    keyNextWorkspace = "",
+    keyPrevWorkspace = "",
+    keyWindowToNext = "",
+    keyWindowToPrev = "",
 
     -- Window actions
     keyToggleFullscreen = "F11",
-    keyToggleFloating = "SUPER + mouse:272",
+    keyToggleFloating = "SUPER + W",
     keyCloseWindow = "SUPER + Q",
-    keyMoveWindow = "SUPER + mouse:272",
-    keyResizeWindow = "SUPER + mouse:273",
+    keyMoveWindow = "SUPER + Z",
+    keyResizeWindow = "SUPER + X",
+    keyCenterWindow = "SUPER + C",
 
     -- Audio
+    keyRaiseVolume = "",
+    keyLowerVolume = "",
+    keyMuteAudio = "",
     keyMuteMic = "SUPER + M",
 
     -- Utilities
+    keyTODOiii = "SUPER + SHIFT + 1",
     keyColorPicker = "SUPER + SHIFT + 2",
     keyScreenshot = "SUPER + SHIFT + 3",
-    keyScreenshotRegion = "SUPER + SHIFT + 4"
+    keyScreenshotRegion = "SUPER + SHIFT + 4",
+    keyTODOiv = "SUPER + SHIFT + 5",
 }
