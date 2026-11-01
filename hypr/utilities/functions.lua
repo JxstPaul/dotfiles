@@ -1,9 +1,11 @@
 local function bind(keybinds, action, flags)
     if type(keybinds) == "table" then
-        for _, key in pairs(keybinds) do
-            hl.bind(key, action, flags)
+        for _, key in ipairs(keybinds) do
+            if key ~= "" then
+                hl.bind(key, action, flags)
+            end
         end
-    else
+    elseif keybinds ~= "" then
         hl.bind(keybinds, action, flags)
     end
 end

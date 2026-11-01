@@ -45,6 +45,6 @@
 	    "key": " TRMNL",
 	    "format": "{5} {6}"
     }, "break",
-    "colors"
+    "colors",
   ]
 }

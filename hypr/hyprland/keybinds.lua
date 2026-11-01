@@ -6,7 +6,6 @@ for i = 1, 4 do
     fn.bind(fn.extend(vars.keyFocusWorkspace, i), hl.dsp.focus({ workspace = i }))
     fn.bind(fn.extend(vars.keyWindowToWorkspace, i), hl.dsp.window.move({ workspace = i, follow = vars.followWindow }))
 end
-
 fn.bind(vars.keyNextWorkspace, hl.dsp.focus({ workspace = "+1" }))
 fn.bind(vars.keyPrevWorkspace, hl.dsp.focus({ workspace = "-1" }))
 
@@ -24,7 +23,7 @@ fn.bind(vars.keyScreenshot, hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date 
 fn.bind(vars.keyScreenshotRegion, hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
 
 fn.bind("SUPER + SPACE", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
-fn.bind("SUPER + R", hl.dsp.exec_cmd("ghostty"))
+fn.bind("SUPER + R", hl.dsp.exec_cmd("kitty"))
 
 -- Audio Controls
 fn.bind({vars.keyRaiseVolume, "XF86AudioRaiseVolume"},

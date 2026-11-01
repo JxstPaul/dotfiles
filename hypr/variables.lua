@@ -4,7 +4,7 @@ return {
     mouseSensitivity = 0.2,
 
     -- Blur
-    blurEnabled = true,
+    blurEnabled = false,
     blurSize = 2,
     blurPasses = 1,
     blurXray = false,
@@ -20,7 +20,7 @@ return {
     windowGapsOut = 8,
 
     -- Window styling
-    windowRounding = 10,
+    windowRounding = 0,
     windowBorderSize = 1,
     activeWindowBorderColor = "#cdd6f4",
     inactiveWindowBorderColor = "#1e1e2e",
